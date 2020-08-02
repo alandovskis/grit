@@ -704,7 +704,7 @@ class Manifest(object):
                 cmd_line += " --bare"
             if clone_args.mirror:
                 cmd_line += " --mirror"
-            cmd_line += " " + self.get_mandatory_setting(repo, "remote-url") + "/" + repo.get_repo() + ".git"
+            cmd_line += " " + self.get_mandatory_setting(repo, "remote-url") + ":" + repo.get_repo() + ".git"
             cmd_line += " " + local_path
             if args.verbose > 0:
                 init_display_line = "Started to clone " + repo.get_repo() + " (" + cmd_line + ")"
