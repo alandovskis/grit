@@ -166,7 +166,7 @@ class Command(object):
     """
 
     def __init__(self, command_line: str, init_display_line: str=None, done_display_line: str=None,
-                 print_errors=True, verbose=0, result_handler=None, client_data=None):
+                 print_errors=True, verbose=1, result_handler=None, client_data=None):
         self.init_display_line = init_display_line  # Display line before starting command.
         self.done_display_line = done_display_line  # Display line after command completed.
         self.command_line = command_line   # The shell command line to execute.
